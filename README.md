@@ -12,4 +12,4 @@ Planejamento de documentação:
 - Funcionalidades:
    1. Exibir Produtos da Loja. 2.
    2.  Adicionar produto(s) ao carrinho.
-   3.  3.  Efetuar pagamento.
+   3.  Efetuar pagamento.
