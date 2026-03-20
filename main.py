@@ -59,7 +59,7 @@ def menu_principal():
 
         elif opcao == "3":
             if not carrinho.itens:
-                print("O carrinho está vazio..\n")
+                print("O carrinho está vazio.\n")
                 continue
 
             carrinho.exibir_itens()
