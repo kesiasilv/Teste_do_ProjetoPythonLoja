@@ -33,7 +33,6 @@ class Loja:
         print("----------------------")
         print("1 - Cartão")
         print("2 - Pix (10% de desconto)")
-        print("3 - Dinheiro (15% de desconto)")
 
         opcao = input("\nEscolha a forma de pagamento: ")
 
@@ -60,20 +59,7 @@ class Loja:
             print(f"Desconto de 10% aplicado. Total com desconto: R$ {total:.2f}\n")
             print("Pagamento via Pix aprovado.")
 
-        elif opcao == "3":
-            desconto = total * 0.15
-            total -= desconto
-            print(f"Desconto de 15% aplicado. Total com desconto: R$ {total:.2f}\n")
-            try:
-                valor_pago = float(input("Digite o valor em dinheiro: R$ "))
-                if valor_pago < total:
-                    print("Valor insuficiente. Compra cancelada.\n")
-                    return
-                troco = valor_pago - total
-                print(f"Pagamento recebido. Troco: R$ {troco:.2f}\n")
-            except ValueError:
-                print("Valor inválido.")
-                return
+    
         else:
             print("Forma de pagamento inválida.")
             return
